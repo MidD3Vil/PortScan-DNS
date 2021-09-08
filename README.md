@@ -1,6 +1,19 @@
 # <h2 align="center">🖥 PortScan-DNS</h2>
 ---------------------------------------------------------------------------
 
+<center>
+    <img src="https://i.ibb.co/w4TWK3w/DNS-Resolver-Git.png" alt="DNS-Resolver-Git" border="0">
+</center>
+
+<hr>
+
+<h1>🐊 | A little bit about me...</h1>
+<blockquote>
+  <ul>
+    <li> [x] HOST </li>
+    <li> [x] IP EXTERNO   </li>
+    <li> [x] IP INTERNO </li>
+
 Esta é uma ferramenta simples de Port Scan + DNS by Hostname...
 
 
