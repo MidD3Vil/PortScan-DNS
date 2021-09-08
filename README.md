@@ -7,9 +7,9 @@ Esta é uma ferramenta simples de Port Scan + DNS by Hostname...
 DNS Resolver / by Hostname:
 
 - [x] HOST
-- [x] IP EXTERNO                       <img src="https://i.ibb.co/w4TWK3w/DNS-Resolver-Git.png" alt="DNS-Resolver-Git" border="0">
+- [x] IP EXTERNO
 - [x] IP INTERNO
-
+<img src="https://i.ibb.co/w4TWK3w/DNS-Resolver-Git.png" alt="DNS-Resolver-Git" border="0">
 
 
 Port Scanner / by IP:
