@@ -37,7 +37,7 @@ while restart == 'S':
 ┗━━━━━━━━━━━━━━━━━━━━━━┛''')
     print(f'{Twhite}>>> Tool by: Dr Midnight <<<')
 
-    opc = str(input(f'\033[7mDigite a opção que deseja:{VRCRM} ')).strip()
+    opc = str(input(f'\n\033[7mDigite a opção que deseja:{VRCRM} ')).strip()
 
     if opc == '1' or opc == '01' or opc == 'Port Scanner':
         clear()
