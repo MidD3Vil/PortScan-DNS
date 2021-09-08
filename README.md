@@ -2,15 +2,12 @@
 ---------------------------------------------------------------------------
 
 
-
 <hr>
 
 <h1>🐊 | DNS Resolver</h1>
 <blockquote>
   <ul>
-      <center>
-    <img src="https://i.ibb.co/w4TWK3w/DNS-Resolver-Git.png" alt="DNS-Resolver-Git" border="0">
-</center>
+    <img src="https://i.ibb.co/w4TWK3w/DNS-Resolver-Git.png" alt="DNS-Resolver-Git" border="0" aling="left">
     <li> [x] HOST </li>
     <li> [x] IP EXTERNO   </li>
     <li> [x] IP INTERNO </li>
