@@ -65,30 +65,30 @@ while restart == 'S':
                     print(f'{Nyellow}Port {port}  {Dgreen}...Open(https / 443)')
                 else:
                     print(f'{Nyellow}Port {port}  {Dgreen}...Open')
-        restart = str(input(f'\n{Twhite}\033[7mDeseja realizar outra consulta S/N? ')).strip().upper()[0]
+        restart = str(input(f'\n{Twhite}\033[7mDeseja realizar outra consulta S/N?{VRCRM} ')).strip().upper()[0]
         clear()
     elif opc == '2' or opc == '02' or opc == 'DNS Resolver':
-            clear()
-            print(f'\n{Ired}########## #################### ##########')
-            print(f'########## ### {Iblue}DNS Resolver {Ired}### ##########')
-            print('########## #################### ##########')
-            print('{:^50}'.format(f'{Twhite}>>>>>>>>>> Tool by: Dr Midnight <<<<<<<<<<'))
-            while True:
-                alvo = input(f'\n{Twhite}\033[7mDigite o Domínio para DNS (http[s]):{VRCRM} ').strip()
-                if alvo.find('http') == -1:
-                    print(f'{Ired}!!! {Nyellow}Domínio Inválido {Ired}!!!')
-                else:
-                    break
-            print('')
-            host = socket.gethostname()
-            intern = socket.gethostbyname(host)
-            extern = get('https://api.ipify.org').text
+        clear()
+        print(f'\n{Ired}########## #################### ##########')
+        print(f'########## ### {Iblue}DNS Resolver {Ired}### ##########')
+        print('########## #################### ##########')
+        print('{:^50}'.format(f'{Twhite}>>>>>>>>>> Tool by: Dr Midnight <<<<<<<<<<'))
+        while True:
+            alvo = input(f'\n{Twhite}\033[7mDigite o Domínio para DNS (http[s]):{VRCRM} ').strip()
+            if alvo.find('http') == -1:
+                print(f'{Ired}!!! {Nyellow}Domínio Inválido {Ired}!!!')
+            else:
+                break
+        print('')
+        host = socket.gethostname()
+        intern = socket.gethostbyname(host)
+        extern = get('https://api.ipify.org').text
 
-            print(f'{Nyellow}Host: {Dgreen}{host}')
-            print(f'{Nyellow}IP Interno: {Dgreen}{intern}')
-            print(f'{Nyellow}IP Externo: {Dgreen}{extern}')
-            restart = str(input(f'\n{Twhite}\033[7mDeseja realizar outra consulta S/N?{VRCRM} ')).strip().upper()[0]
-            clear()
+        print(f'{Nyellow}Host: {Dgreen}{host}')
+        print(f'{Nyellow}IP Interno: {Dgreen}{intern}')
+        print(f'{Nyellow}IP Externo: {Dgreen}{extern}')
+        restart = str(input(f'\n{Twhite}\033[7mDeseja realizar outra consulta S/N?{VRCRM} ')).strip().upper()[0]
+        clear()
     else:
         print(f'{Ired}!!! {Nyellow}Opção Inválida {Ired}!!!')
         clear()
