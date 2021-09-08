@@ -1,6 +1,6 @@
 # <h2 align="center">🖥 PortScan-DNS</h2>
 
-Esta é uma ferramenta simples de Port Scan + DNS by Hostname...
+<h2 align="center">🖥 Esta é uma ferramenta simples de Port Scan + DNS by Hostname...</h2>
 ---------------------------------------------------------------------------
 
 
