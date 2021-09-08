@@ -63,6 +63,8 @@ while restart == 'S':
                     print(f'{Nyellow}Port {port}  {Dgreen}...Open(http / 80)')
                 elif port == 443:
                     print(f'{Nyellow}Port {port}  {Dgreen}...Open(https / 443)')
+                elif port == 5431:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(Park Agent / 5431)')
                 else:
                     print(f'{Nyellow}Port {port}  {Dgreen}...Open')
         restart = str(input(f'\n{Twhite}\033[7mDeseja realizar outra consulta S/N?{VRCRM} ')).strip().upper()[0]
