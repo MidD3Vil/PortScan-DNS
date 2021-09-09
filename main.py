@@ -47,7 +47,7 @@ while restart == 'S':
         print('{:^50}'.format(f'{Twhite}>>>>>>>>>> Tool by: Dr Midnight <<<<<<<<<<'))
         while True:
             alvo = input(f'\n\033[7m{Twhite}Digite o IP/Domínio:{VRCRM} ').strip()
-            if len(alvo) > 13 or len(alvo) < 10:
+            if len(alvo) > 15 or len(alvo) < 10:
                 print(f'{Ired}!!! {Nyellow}IP Inválido {Ired}!!!')
             else:
                 break
