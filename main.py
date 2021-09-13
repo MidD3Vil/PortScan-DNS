@@ -37,7 +37,7 @@ while restart == 'S':
 ┗━━━━━━━━━━━━━━━━━━━━━━┛''')
     print(f'{Twhite}>>> Tool by: Dr Midnight <<<')
 
-    opc = str(input(f'\n\033[7mDigite a opção que deseja:{VRCRM} ')).strip()
+    opc = str(input(f'\033[7mDigite a opção que deseja:{VRCRM} ')).strip()
 
     if opc == '1' or opc == '01' or opc == 'Port Scanner':
         clear()
@@ -47,7 +47,7 @@ while restart == 'S':
         print('{:^50}'.format(f'{Twhite}>>>>>>>>>> Tool by: Dr Midnight <<<<<<<<<<'))
         while True:
             alvo = input(f'\n\033[7m{Twhite}Digite o IP/Domínio:{VRCRM} ').strip()
-            if len(alvo) > 15 or len(alvo) < 10:
+            if len(alvo) > 13 or len(alvo) < 10:
                 print(f'{Ired}!!! {Nyellow}IP Inválido {Ired}!!!')
             else:
                 break
@@ -57,14 +57,30 @@ while restart == 'S':
             client = socket.socket()
             client.settimeout(0.05)
             if client.connect_ex((alvo, port)) == 0:
-                if port == 21:
-                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(FTP / 21)')
+                if port == 20 or port == 21:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(FTP)')         # 20/21
+                elif port == 22:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(SSH)')         # 22
+                elif port == 23:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(Telnet)')      # 23
+                elif port == 25:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(SMTP)')        # 25
+                elif port == 53:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(DNS)')         # 53
+                elif port == 67 or port == 68:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(DHCP)')        # 67/68
                 elif port == 80:
-                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(http / 80)')
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(HTTP)')        # 80
+                elif port == 110:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(POP)')         # 110
+                elif port == 143:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(IMAP)')        # 143
+                elif port == 179:
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(BGP)')         # 179
                 elif port == 443:
-                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(https / 443)')
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(HTTPS)')       # 443
                 elif port == 5431:
-                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(Park Agent / 5431)')
+                    print(f'{Nyellow}Port {port}  {Dgreen}...Open(Park Agent)')  # 5431
                 else:
                     print(f'{Nyellow}Port {port}  {Dgreen}...Open')
         restart = str(input(f'\n{Twhite}\033[7mDeseja realizar outra consulta S/N?{VRCRM} ')).strip().upper()[0]
