@@ -38,7 +38,7 @@ Bom, é isso. Espero que gostem...
 💻 Termux
 $ pkg upgrade -y && pkg update -y
 $ pkg install git python figlet -y
-$ git clone https://github.com/drmidnightytb/PortScan-DNS
+$ git clone https://github.com/MidD3Vil/PortScan-DNS
 $ cd PortScan-DNS
 $ python3 main.py
 ```
